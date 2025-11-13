@@ -1,7 +1,7 @@
 CREATE TABLE tasks(
        id INT AUTO_INCREMENT PRIMARY KEY, 
 	tittle VAR CHAR(100) NOT NULL,
-	status ENUM ('Pendente','Concluida')DEFAULT 'Pendente',
+	status ENUM ('pendente','concluida')DEFAULT 'pendente',
 	creted_at DATETIME DEFAULT CURRENT_TIMESTAMP);
 
 	
