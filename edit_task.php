@@ -11,7 +11,7 @@ if(isset($_GET['id'])){
     echo"Tarefas não informada";
 exit;
  } } else{ 
-    echo "ID datarefa não informada";
+    echo "ID Tarefas não informada";
 exit;
  }
  ?>
@@ -29,7 +29,7 @@ exit;
 method="POST">
 <input type="hidden" name="id" value="<?php
 echo $task['id'];?>">
-<input type="text" name="title" value="<?php
+<input type="text" name="title" value="<?php echo
 htmlspecialchars($task['title']);?>"required >
 <button type="submit">Salvar as alteraçoes</button>
 </form>
